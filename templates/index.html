@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Execute Scripts</title>
+</head>
+<body>
+    <h1>Welcome to the Script Execution Interface</h1>
+    <button onclick="executeScripts()">Execute Scripts</button>
+
+    <script>
+        function executeScripts() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("GET", "/execute-scripts", true);
+            xhttp.send();
+            alert("Scripts executed!");
+        }
+    </script>
+</body>
+</html>
