@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Execute Scripts</title>
+    <title>VidCall</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            font-family: 'Arial', sans-serif;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to the Script Execution Interface</h1>
-    <button onclick="executeScripts()">Execute Scripts</button>
+    <div class="container">
+        <h1>VidCall</h1>
+        <button onclick="executeScripts()">Start Call</button>
+    </div>
 
     <script>
         function executeScripts() {
